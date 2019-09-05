@@ -1,0 +1,65 @@
+h3.mt-2 {
+  color: white;
+}
+
+section.my-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.controls-top {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+a.btn-floating {
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.btn-secondary {
+  background-color: #82b1ff !important;
+}
+
+a.btn-floating:nth-child(1) {
+  margin-right: 100px;
+}
+
+.gradient-custom {
+  background: #3a7bd5;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#3a6073), to(#3a7bd5));
+  background: -webkit-linear-gradient(left, #3a6073, #3a7bd5);
+  background: -o-linear-gradient(left, #3a6073, #3a7bd5);
+  background: linear-gradient(to right, #3a6073, #3a7bd5);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card-comments img {
+  width: 4rem;
+}
+
+h3.mt-2 {
+  color: white;
+  padding: 15px;
+}
+
+section.card {
+  background-image: url("../img/estradas2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+img.principal {
+  height: 300px;
+  width: 100%;
+}
+
+img.logo {
+  height: 50px;
+}
+
+/*# sourceMappingURL=style.min.css.map */
