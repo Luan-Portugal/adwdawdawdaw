@@ -17,22 +17,30 @@
     width: 4rem; 
   }
 
-    h3.mt-2 {
-      color: white;
-      padding: 15px;
-    }
+  h3.mt-2 {
+    color: white;
+    padding: 15px;
+  }
 
-    section.card {
-      background-image: url("../img/estradas2.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
+.nav-link waves-effect {
+  transition: transform ease 0.3s;
+}
 
-    img.principal {
-      height: 300px;
-      width: 100%;
-    }
+.nav-link waves-effect:hover {
+  transform: scale(1.2);
+}
 
-    img.logo {
-      height: 50px;
-    }
+  section.card {
+    background-image: url("../img/estradas2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  img.principal {
+    height: 300px;
+    width: 100%;
+  }
+
+  img.logo {
+    height: 50px;
+  }

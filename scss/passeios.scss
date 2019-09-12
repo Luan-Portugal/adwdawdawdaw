@@ -17,3 +17,10 @@ a.btn-floating:nth-child(1) {
     margin-right: 100px;
 }
 
+.nav-link waves-effect {
+    transition: transform ease 0.3s;
+  }
+  
+.nav-link waves-effect:hover {
+transform: scale(1.2);
+}

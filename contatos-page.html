@@ -10,7 +10,7 @@
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
-  <link href="css/mdb.min.css" rel="stylesheet">
+  <link href="./css/mdb.min.css" rel="stylesheet">
   <link href="./css/style.css" rel="stylesheet">
   <title>Contantos</title>
 </head>
@@ -24,8 +24,8 @@
       <div class="container">
 
         <!-- Brand -->
-        <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/docs/jquery/">
-          <strong class="blue-text">R & B Turismo</strong>
+        <a class="navbar-brand waves-effect" href="https://www.facebook.com/LB-Turismo-515168151999415/?epa=SEARCH_BOX">
+          <strong class="blue-text">L & B Turismo</strong>
         </a>
 
         <!-- Collapse -->
@@ -45,7 +45,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link waves-effect" href="./eventos-page.html">Eventos</a>
+              <a class="nav-link waves-effect" href="./eventos-page.html">Passeios Realizados</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link waves-effect" href="./contatos-page.html">Contatos</a>
@@ -55,18 +55,17 @@
           <!-- Right -->
           <ul class="navbar-nav nav-flex-icons">
             <li class="nav-item">
-              <a href="https://www.facebook.com/mdbootstrap" class="nav-link waves-effect">
+              <a href="https://www.facebook.com/LB-Turismo-515168151999415/?epa=SEARCH_BOX" class="nav-link waves-effect">
                 <i class="fab fa-facebook-f"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a href="https://twitter.com/MDBootstrap" class="nav-link waves-effect">
+              <a href="./contatos-page.html" class="nav-link waves-effect">
                 <i class="fas fa-phone"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a href="https://github.com/mdbootstrap/bootstrap-material-design"
-                class="nav-link border border-light rounded waves-effect">
+              <a class="nav-link border border-light rounded waves-effect">
                 <i class="fab fa-github mr-2"></i>MDB GitHub
               </a>
             </li>
@@ -105,26 +104,23 @@
             </div>
             <p class="dark-grey-text">Preencha todos os dados para um melhor atendimento.</p>
             <!-- Body -->
+            <form class="form-contact" tabindex="1" action="./php/envia.php" method="POST"></form>
             <div class="md-form">
               <i class="fas fa-user prefix grey-text"></i>
-              <input type="text" id="form-name" class="form-control" placeholder="Seu nome">
-              <label for="form-name"></label>
+              <input name='nome' type="text" placeholder="Seu nome">
             </div>
             <div class="md-form">
               <i class="fas fa-envelope prefix grey-text"></i>
-              <input type="text" id="form-email" class="form-control" placeholder="Seu E-mail">
-              <label for="form-email"></label>
+              <input name='email' type="text" placeholder="Seu E-mail">
             </div>
             <div class="md-form">
               <i class="fas fa-tag prefix grey-text"></i>
-              <input type="text" id="form-Subject" class="form-control" placeholder="Telefone para Contato">
-              <label for="form-Subject"></label>
+              <input name='tel' type="text" placeholder="Telefone para Contato">
             </div>
             <div class="md-form">
               <i class="fas fa-pencil-alt prefix grey-text"></i>
-              <textarea id="form-text" class="form-control md-textarea" rows="3"
+              <textarea name='mensagem' class="form-control md-textarea" rows="3"
                 placeholder="Envie uma mensagem..."></textarea>
-              <label for="form-text"></label>
             </div>
             <div class="text-center">
               <button class="btn btn-light-blue">Enviar</button>
@@ -167,7 +163,7 @@
     <!--Copyright-->
     <div class="footer-copyright py-3">
       © 2019 Copyright:
-      <a href="https://mdbootstrap.com/education/bootstrap/"> R & B Turismo </a>
+      <a href="https://mdbootstrap.com/education/bootstrap/"> L & B Turismo </a>
     </div>
     <!--/.Copyright-->
 

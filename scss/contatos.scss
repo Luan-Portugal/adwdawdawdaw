@@ -7,3 +7,11 @@ section.my-5 {
     flex-direction: column;
     align-items: center;
 }
+
+.nav-link waves-effect {
+    transition: transform ease 0.3s;
+  }
+  
+.nav-link waves-effect:hover {
+transform: scale(1.2);
+}
