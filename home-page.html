@@ -15,6 +15,7 @@
   <!-- Your custom styles (optional) -->
   <link href="css/style.min.css" rel="stylesheet">
 </head>
+
 <body>
 
   <!--Main Navigation-->
@@ -56,7 +57,8 @@
           <!-- Right -->
           <ul class="navbar-nav nav-flex-icons">
             <li class="nav-item">
-              <a href="https://www.facebook.com/LB-Turismo-515168151999415/?epa=SEARCH_BOX" class="nav-link waves-effect">
+              <a href="https://www.facebook.com/LB-Turismo-515168151999415/?epa=SEARCH_BOX"
+                class="nav-link waves-effect">
                 <i class="fab fa-facebook-f"></i>
               </a>
             </li>
@@ -67,7 +69,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link border border-light rounded waves-effect">
-                <i class="fab fa-github mr-2"></i>MDB GitHub
+                <!-- <img class="logo" src="./img/logo22.png"> -->
               </a>
             </li>
           </ul>
@@ -112,8 +114,7 @@
 
             <!--Image-->
             <div class="view overlay rounded z-depth-1-half mb-3">
-              <img src="./img/beto-carrero.jpg" class="img-fluid principal"
-                alt="Sample post image">
+              <img src="./img/beto-carrero.jpg" class="img-fluid principal" alt="Sample post image">
               <a>
                 <div class="mask rgba-white-slight"></div>
               </a>
@@ -121,49 +122,55 @@
 
             <!--Excerpt-->
             <div class="news-data">
-              <a  class="light-blue-text">
+              <a class="light-blue-text">
                 <h6>
-                    <i class="fas fa-bus"></i>
+                  <i class="fas fa-bus"></i>
                   <strong> Viagens</strong>
                 </h6>
               </a>
             </div>
             <h3>
-              <a>
-                <strong>Santa Catarina</strong>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="sr-only">Dropdown</span>
-                  </button>
-                  <div class="dropdown-menu">
-                    <b>Saída dia 06/05/2020 As 20:00 Chegada 07/05/2020 Retorno dia 10/05/2020.</b><br> 
-                    <b>Incluso: Ônibus legalizado, executivo, com ar condicionado, banheiro,som ambiente.</b><br>
-                    <b>Guia credenciado no ônibus, Guia credenciado em Porto Seguro.</b><br> 
-                    <b>Seguro Viagem, Kit lanches na ida, Café da manhã os 3 dias. Não incluso: almoço e jantar</b><br> 
-                    <b>Quartos: Duplo, triplo e quádruplo. locais de embarques: Miguel couto, Posse,</b><br> 
-                    <b>Rodoviária de nova Iguaçú, Metrô de Irajá, Caxias (igreja Santo Antônio), Praça de Paracambi.</b><br> 
-                    <b>Formas de pagamentos: Depósito em conta quitado até 10 dias antes. Pagamento em loja no carnê,</b><br> 
-                    <b>Cartão de crédito . 10x 99,60 por pessoa 10x 175,76 CASAL 10x 82,00 crianças de 6 a 10 anos.</b><br> 
-                    <b> Valor: R$1500,00 casal, R$700,00 crianças, R$ 850,00 pessoa, crianças menores de 5 anos grátis.</b>
+              <strong>Santa Catarina</strong>
+              <p>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse"
+                  aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2"><i class="fas fa-angle-down"></i></button>
+              </p>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="card card-body">
+                      Saída dia 06/05/2020 As 20:00 Chegada 07/05/2020 Retorno dia 10/05/2020.<br><br>
+                      Incluso: Ônibus legalizado, executivo, com ar condicionado, banheiro,som ambiente.<br><br>
+                      Guia credenciado no ônibus, Guia credenciado em Porto Seguro.<br><br>
+                      Seguro Viagem, Kit lanches na ida, Café da manhã os 3 dias. Não incluso: almoço e
+                      jantar<br><br>
+                      Quartos: Duplo, triplo e quádruplo. locais de embarques: Miguel couto, Posse,<br>
+                      Rodoviária de nova Iguaçú, Metrô de Irajá, Caxias (igreja Santo Antônio), Praça de
+                      Paracambi.<br><br>
+                      Formas de pagamentos: Depósito em conta quitado até 10 dias antes. Pagamento em loja no
+                      carnê,<br>
+                      Cartão de crédito . 10x 99,60 por pessoa 10x 175,76 CASAL 10x 82,00 crianças de 6 a 10
+                      anos.<br><br>
+                      Valor: R$1500,00 casal, R$700,00 crianças, R$ 850,00 pessoa, crianças menores de 5 anos
+                      grátis.
+                    </div>
                   </div>
                 </div>
-              </a>
+              </div>
             </h3>
             <i class="far fa-clock"></i> 12/03/2020</strong>
-            </p>
 
             <!--/Featured news-->
 
             <hr>
 
             <!--Small news-->
-            <div class="row">
+            <div class="row fotos-menores">
               <div class="col-md-3">
 
                 <!--Image-->
                 <div class="view overlay rounded z-depth-1">
-                  <img src="./img/campos-jordao.jpg" class="img-fluid"
-                    alt="Minor sample post image">
+                  <img src="./img/campos-jordao.jpg" class="img-fluid" alt="Minor sample post image">
                   <a>
                     <div class="mask rgba-white-slight"></div>
                   </a>
@@ -172,27 +179,38 @@
 
               <!--Excerpt-->
               <div class="col-md-9">
-                <p class="dark-grey-text">
-                  <strong>21/12/2019</strong>
-                </p>
-                <a><strong>Campos do Jordão(SP)</strong> 
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <span class="sr-only">Dropdown</span>
-                    </button>
-                    <div class="dropdown-menu">
-                      <b>Saída dia 06/05/2020 As 20:00 Chegada 07/05/2020 Retorno dia 10/05/2020.</b><br> 
-                      <b>Incluso: Ônibus legalizado, executivo, com ar condicionado, banheiro,som ambiente.</b><br>
-                      <b>Guia credenciado no ônibus, Guia credenciado em Porto Seguro.</b><br> 
-                      <b>Seguro Viagem, Kit lanches na ida, Café da manhã os 3 dias. Não incluso: almoço e jantar</b><br> 
-                      <b>Quartos: Duplo, triplo e quádruplo. locais de embarques: Miguel couto, Posse,</b><br> 
-                      <b>Rodoviária de nova Iguaçú, Metrô de Irajá, Caxias (igreja Santo Antônio), Praça de Paracambi.</b><br> 
-                      <b>Formas de pagamentos: Depósito em conta quitado até 10 dias antes. Pagamento em loja no carnê,</b><br> 
-                      <b>Cartão de crédito . 10x 99,60 por pessoa 10x 175,76 CASAL 10x 82,00 crianças de 6 a 10 anos.</b><br> 
-                      <b> Valor: R$1500,00 casal, R$700,00 crianças, R$ 850,00 pessoa, crianças menores de 5 anos grátis.</b>
+                <h3>
+                  <strong>Campos do Jordão(SP)</strong>
+                  <p>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse2"
+                      aria-expanded="false" aria-controls="multiCollapseExample2 multiCollapseExample2"><i class="fas fa-angle-right"></i></button>
+                  </p>
+                  <div class="row">
+                    <div class="col">
+                      <div class="collapse multi-collapse2" id="multiCollapseExample2">
+                        <div class="card card-body">
+                          Saída dia 06/05/2020 As 20:00 Chegada 07/05/2020 Retorno dia 10/05/2020.<br>
+                          Incluso: Ônibus legalizado, executivo, com ar condicionado, banheiro,som ambiente.<br>
+                          Guia credenciado no ônibus, Guia credenciado em Porto Seguro.<br>
+                          Seguro Viagem, Kit lanches na ida, Café da manhã os 3 dias. Não incluso: almoço e
+                            jantar<br>
+                          Quartos: Duplo, triplo e quádruplo. locais de embarques: Miguel couto, Posse,<br>
+                          Rodoviária de nova Iguaçú, Metrô de Irajá, Caxias (igreja Santo Antônio), Praça de
+                            Paracambi.<br>
+                          Formas de pagamentos: Depósito em conta quitado até 10 dias antes. Pagamento em loja no
+                            carnê,<br>
+                          Cartão de crédito . 10x 99,60 por pessoa 10x 175,76 CASAL 10x 82,00 crianças de 6 a 10
+                            anos.<br>
+                           Valor: R$1500,00 casal, R$700,00 crianças, R$ 850,00 pessoa, crianças menores de 5 anos
+                            grátis.
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </a>
+                </h3>
+                <p class="dark-grey-text">
+                  <i class="far fa-clock"></i> <strong>21/12/2019</strong>
+                </p>
               </div>
 
             </div>
@@ -206,8 +224,7 @@
 
                 <!--Image-->
                 <div class="view overlay rounded z-depth-1">
-                  <img src="./img/poco-caldas.jpg " class="img-fluid"
-                    alt="Minor sample post image">
+                  <img src="./img/poco-caldas.jpg " class="img-fluid" alt="Minor sample post image">
                   <a>
                     <div class="mask rgba-white-slight"></div>
                   </a>
@@ -221,20 +238,26 @@
                 </p>
                 <a><strong>Poço de Caldas(MG)</strong>
                   <div class="btn-group">
-                    
-                    <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                    <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <span class="sr-only">Dropdown</span>
                     </button>
                     <div class="dropdown-menu">
-                      <b>Saída dia 06/05/2020 As 20:00 Chegada 07/05/2020 Retorno dia 10/05/2020.</b><br> 
+                      <b>Saída dia 06/05/2020 As 20:00 Chegada 07/05/2020 Retorno dia 10/05/2020.</b><br>
                       <b>Incluso: Ônibus legalizado, executivo, com ar condicionado, banheiro,som ambiente.</b><br>
-                      <b>Guia credenciado no ônibus, Guia credenciado em Porto Seguro.</b><br> 
-                      <b>Seguro Viagem, Kit lanches na ida, Café da manhã os 3 dias. Não incluso: almoço e jantar</b><br> 
-                      <b>Quartos: Duplo, triplo e quádruplo. locais de embarques: Miguel couto, Posse,</b><br> 
-                      <b>Rodoviária de nova Iguaçú, Metrô de Irajá, Caxias (igreja Santo Antônio), Praça de Paracambi.</b><br> 
-                      <b>Formas de pagamentos: Depósito em conta quitado até 10 dias antes. Pagamento em loja no carnê,</b><br> 
-                      <b>Cartão de crédito . 10x 99,60 por pessoa 10x 175,76 CASAL 10x 82,00 crianças de 6 a 10 anos.</b><br> 
-                      <b> Valor: R$1500,00 casal, R$700,00 crianças, R$ 850,00 pessoa, crianças menores de 5 anos grátis.</b>
+                      <b>Guia credenciado no ônibus, Guia credenciado em Porto Seguro.</b><br>
+                      <b>Seguro Viagem, Kit lanches na ida, Café da manhã os 3 dias. Não incluso: almoço e
+                        jantar</b><br>
+                      <b>Quartos: Duplo, triplo e quádruplo. locais de embarques: Miguel couto, Posse,</b><br>
+                      <b>Rodoviária de nova Iguaçú, Metrô de Irajá, Caxias (igreja Santo Antônio), Praça de
+                        Paracambi.</b><br>
+                      <b>Formas de pagamentos: Depósito em conta quitado até 10 dias antes. Pagamento em loja no
+                        carnê,</b><br>
+                      <b>Cartão de crédito . 10x 99,60 por pessoa 10x 175,76 CASAL 10x 82,00 crianças de 6 a 10
+                        anos.</b><br>
+                      <b> Valor: R$1500,00 casal, R$700,00 crianças, R$ 850,00 pessoa, crianças menores de 5 anos
+                        grátis.</b>
                     </div>
                   </div>
                 </a>
@@ -251,8 +274,7 @@
 
             <!--Image-->
             <div class="view overlay rounded z-depth-1-half mb-3">
-              <img src="./img/porto-seguro.jpg" class="img-fluid principal"
-                alt="Sample post image">
+              <img src="./img/porto-seguro.jpg" class="img-fluid principal" alt="Sample post image">
               <a>
                 <div class="mask rgba-white-slight"></div>
               </a>
@@ -262,7 +284,7 @@
             <div class="news-data">
               <a class="light-blue-text">
                 <h6>
-                    <i class="fas fa-bus"></i>
+                  <i class="fas fa-bus"></i>
                   <strong> Viagens</strong>
                 </h6>
               </a>
@@ -271,25 +293,30 @@
               <a>
                 <strong>Porto Seguro</strong>
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span class="sr-only">Dropdown</span>
                   </button>
                   <div class="dropdown-menu">
-                    <b>Saída dia 06/05/2020 As 20:00 Chegada 07/05/2020 Retorno dia 10/05/2020.</b><br> 
+                    <b>Saída dia 06/05/2020 As 20:00 Chegada 07/05/2020 Retorno dia 10/05/2020.</b><br>
                     <b>Incluso: Ônibus legalizado, executivo, com ar condicionado, banheiro,som ambiente.</b><br>
-                    <b>Guia credenciado no ônibus, Guia credenciado em Porto Seguro.</b><br> 
-                    <b>Seguro Viagem, Kit lanches na ida, Café da manhã os 3 dias. Não incluso: almoço e jantar</b><br> 
-                    <b>Quartos: Duplo, triplo e quádruplo. locais de embarques: Miguel couto, Posse,</b><br> 
-                    <b>Rodoviária de nova Iguaçú, Metrô de Irajá, Caxias (igreja Santo Antônio), Praça de Paracambi.</b><br> 
-                    <b>Formas de pagamentos: Depósito em conta quitado até 10 dias antes. Pagamento em loja no carnê,</b><br> 
-                    <b>Cartão de crédito . 10x 99,60 por pessoa 10x 175,76 CASAL 10x 82,00 crianças de 6 a 10 anos.</b><br> 
-                    <b> Valor: R$1500,00 casal, R$700,00 crianças, R$ 850,00 pessoa, crianças menores de 5 anos grátis.</b>
+                    <b>Guia credenciado no ônibus, Guia credenciado em Porto Seguro.</b><br>
+                    <b>Seguro Viagem, Kit lanches na ida, Café da manhã os 3 dias. Não incluso: almoço e jantar</b><br>
+                    <b>Quartos: Duplo, triplo e quádruplo. locais de embarques: Miguel couto, Posse,</b><br>
+                    <b>Rodoviária de nova Iguaçú, Metrô de Irajá, Caxias (igreja Santo Antônio), Praça de
+                      Paracambi.</b><br>
+                    <b>Formas de pagamentos: Depósito em conta quitado até 10 dias antes. Pagamento em loja no
+                      carnê,</b><br>
+                    <b>Cartão de crédito . 10x 99,60 por pessoa 10x 175,76 CASAL 10x 82,00 crianças de 6 a 10
+                      anos.</b><br>
+                    <b> Valor: R$1500,00 casal, R$700,00 crianças, R$ 850,00 pessoa, crianças menores de 5 anos
+                      grátis.</b>
                   </div>
                 </div>
               </a>
             </h3>
             <strong>
-                <i class="far fa-clock"></i> 06/05/2020</strong>
+              <i class="far fa-clock"></i> 06/05/2020</strong>
             </p>
 
             <!--/Featured news-->
@@ -302,8 +329,7 @@
 
                 <!--Image-->
                 <div class="view overlay rounded z-depth-1">
-                  <img src="./img/arraial-cabo.jpg" class="img-fluid"
-                    alt="Minor sample post image">
+                  <img src="./img/arraial-cabo.jpg" class="img-fluid" alt="Minor sample post image">
                   <a>
                     <div class="mask rgba-white-slight"></div>
                   </a>
@@ -313,23 +339,29 @@
               <!--Excerpt-->
               <div class="col-md-9">
                 <p class="dark-grey-text">
-                    <strong>10/11/2019</strong>
+                  <strong>10/11/2019</strong>
                 </p>
                 <a><strong>Arraial do Cabo(RJ)</strong>
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <span class="sr-only">Dropdown</span>
                     </button>
                     <div class="dropdown-menu">
-                      <b>Saída dia 06/05/2020 As 20:00 Chegada 07/05/2020 Retorno dia 10/05/2020.</b><br> 
+                      <b>Saída dia 06/05/2020 As 20:00 Chegada 07/05/2020 Retorno dia 10/05/2020.</b><br>
                       <b>Incluso: Ônibus legalizado, executivo, com ar condicionado, banheiro,som ambiente.</b><br>
-                      <b>Guia credenciado no ônibus, Guia credenciado em Porto Seguro.</b><br> 
-                      <b>Seguro Viagem, Kit lanches na ida, Café da manhã os 3 dias. Não incluso: almoço e jantar</b><br> 
-                      <b>Quartos: Duplo, triplo e quádruplo. locais de embarques: Miguel couto, Posse,</b><br> 
-                      <b>Rodoviária de nova Iguaçú, Metrô de Irajá, Caxias (igreja Santo Antônio), Praça de Paracambi.</b><br> 
-                      <b>Formas de pagamentos: Depósito em conta quitado até 10 dias antes. Pagamento em loja no carnê,</b><br> 
-                      <b>Cartão de crédito . 10x 99,60 por pessoa 10x 175,76 CASAL 10x 82,00 crianças de 6 a 10 anos.</b><br> 
-                      <b> Valor: R$1500,00 casal, R$700,00 crianças, R$ 850,00 pessoa, crianças menores de 5 anos grátis.</b>
+                      <b>Guia credenciado no ônibus, Guia credenciado em Porto Seguro.</b><br>
+                      <b>Seguro Viagem, Kit lanches na ida, Café da manhã os 3 dias. Não incluso: almoço e
+                        jantar</b><br>
+                      <b>Quartos: Duplo, triplo e quádruplo. locais de embarques: Miguel couto, Posse,</b><br>
+                      <b>Rodoviária de nova Iguaçú, Metrô de Irajá, Caxias (igreja Santo Antônio), Praça de
+                        Paracambi.</b><br>
+                      <b>Formas de pagamentos: Depósito em conta quitado até 10 dias antes. Pagamento em loja no
+                        carnê,</b><br>
+                      <b>Cartão de crédito . 10x 99,60 por pessoa 10x 175,76 CASAL 10x 82,00 crianças de 6 a 10
+                        anos.</b><br>
+                      <b> Valor: R$1500,00 casal, R$700,00 crianças, R$ 850,00 pessoa, crianças menores de 5 anos
+                        grátis.</b>
                     </div>
                   </div>
                 </a>
@@ -360,41 +392,47 @@
                   <strong>29/11/2019</strong>
                 </p>
                 <a><strong>Ibitinga(SP)</strong>
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="sr-only">Dropdown</span>
-                      </button>
-                      <div class="dropdown-menu">
-                        <b>Saída dia 06/05/2020 As 20:00 Chegada 07/05/2020 Retorno dia 10/05/2020.</b><br> 
-                        <b>Incluso: Ônibus legalizado, executivo, com ar condicionado, banheiro,som ambiente.</b><br>
-                        <b>Guia credenciado no ônibus, Guia credenciado em Porto Seguro.</b><br> 
-                        <b>Seguro Viagem, Kit lanches na ida, Café da manhã os 3 dias. Não incluso: almoço e jantar</b><br> 
-                        <b>Quartos: Duplo, triplo e quádruplo. locais de embarques: Miguel couto, Posse,</b><br> 
-                        <b>Rodoviária de nova Iguaçú, Metrô de Irajá, Caxias (igreja Santo Antônio), Praça de Paracambi.</b><br> 
-                        <b>Formas de pagamentos: Depósito em conta quitado até 10 dias antes. Pagamento em loja no carnê,</b><br> 
-                        <b>Cartão de crédito . 10x 99,60 por pessoa 10x 175,76 CASAL 10x 82,00 crianças de 6 a 10 anos.</b><br> 
-                        <b> Valor: R$1500,00 casal, R$700,00 crianças, R$ 850,00 pessoa, crianças menores de 5 anos grátis.</b>
-                      </div>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="sr-only">Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                      <b>Saída dia 06/05/2020 As 20:00 Chegada 07/05/2020 Retorno dia 10/05/2020.</b><br>
+                      <b>Incluso: Ônibus legalizado, executivo, com ar condicionado, banheiro,som ambiente.</b><br>
+                      <b>Guia credenciado no ônibus, Guia credenciado em Porto Seguro.</b><br>
+                      <b>Seguro Viagem, Kit lanches na ida, Café da manhã os 3 dias. Não incluso: almoço e
+                        jantar</b><br>
+                      <b>Quartos: Duplo, triplo e quádruplo. locais de embarques: Miguel couto, Posse,</b><br>
+                      <b>Rodoviária de nova Iguaçú, Metrô de Irajá, Caxias (igreja Santo Antônio), Praça de
+                        Paracambi.</b><br>
+                      <b>Formas de pagamentos: Depósito em conta quitado até 10 dias antes. Pagamento em loja no
+                        carnê,</b><br>
+                      <b>Cartão de crédito . 10x 99,60 por pessoa 10x 175,76 CASAL 10x 82,00 crianças de 6 a 10
+                        anos.</b><br>
+                      <b> Valor: R$1500,00 casal, R$700,00 crianças, R$ 850,00 pessoa, crianças menores de 5 anos
+                        grátis.</b>
                     </div>
-                </a>  
+                  </div>
+                </a>
               </div>
 
             </div>
 
             <hr>
 
-           
-            </div>
-            <!--/Small news-->
 
           </div>
-          <!--Grid column-->
+          <!--/Small news-->
 
         </div>
-        <!--Grid row-->
+        <!--Grid column-->
 
-      </section>
-      <!--/Section: Magazine v.1-->
+    </div>
+    <!--Grid row-->
+
+    </section>
+    <!--/Section: Magazine v.1-->
 
 
     </div>
@@ -428,7 +466,7 @@
     <!--Copyright-->
     <div class="footer-copyright py-3">
       © 2019 Copyright:
-      <a> L  & B Turismo </a>
+      <a> L & B Turismo </a>
     </div>
     <!--/.Copyright-->
 

@@ -8,6 +8,14 @@ section.my-5 {
   align-items: center;
 }
 
+.nav-link waves-effect {
+  transition: transform ease 0.3s;
+}
+
+.nav-link waves-effect:hover {
+  transform: scale(1.2);
+}
+
 div.controls-top {
   text-align: center;
   margin-bottom: 30px;
@@ -24,6 +32,14 @@ a.btn-floating {
 
 a.btn-floating:nth-child(1) {
   margin-right: 100px;
+}
+
+.nav-link waves-effect {
+  transition: transform ease 0.3s;
+}
+
+.nav-link waves-effect:hover {
+  transform: scale(1.2);
 }
 
 .gradient-custom {
@@ -47,10 +63,19 @@ h3.mt-2 {
   padding: 15px;
 }
 
+.nav-link waves-effect {
+  transition: transform ease 0.3s;
+}
+
+.nav-link waves-effect:hover {
+  transform: scale(1.2);
+}
+
 section.card {
-  background-image: url("../img/estradas.jpg");
+  background-image: url("../img/capaverde.png");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 200px;
 }
 
 img.principal {
@@ -58,8 +83,30 @@ img.principal {
   width: 100%;
 }
 
-img.logo {
-  height: 50px;
+.border-light {
+  border-color: white !important;
+}
+
+div .card.card-body {
+  font-size: 18px;
+}
+
+.fotos-menores {
+  flex-direction: column;
+}
+
+.waves-effect {
+  padding: 10px;
+  height: 40px;
+}
+
+h3 {
+  display: flex;
+  align-items: center;
+}
+
+p {
+  margin-bottom: 0px;
 }
 
 /*# sourceMappingURL=style.min.css.map */
