@@ -1,16 +1,19 @@
 <?php
+
+require("/home/usuario/diretoriodeinstalação/PHPMailer-master/src/PHPMailer.php");
+require("/home/usuario/diretoriodeinstalação/PHPMailer-master/src/SMTP.php");
+require("/home/usuario/diretoriodeinstalação/PHPMailer-master/src/Exception.php");
+
 // Destinatário
 $para = "contato.luanps@gmail.com";
-
 // Assunto do e-mail
 $assunto = "Contato do através do site ...";
-
 // Campos do formulário de contato
+
 $nome = $_POST['nome'];
 $email = $_POST['email'];
 $telefone = $_POST['tel'];
 $mensagem = $_POST['mensagem'];
-
 
 // Monta o corpo da mensagem com os campos
 $corpo = "<html><body>";
@@ -20,16 +23,23 @@ $corpo .= "Telefone: $telefone";
 $corpo .= "Mensagem: $mensagem";
 $corpo .= "</body></html>";
 
-// Cabeçalho do e-mail
-$email_headers = implode("\n", array("From: $nome", "Reply-To: $email", "Subject: $assunto", "Return-Path: $email", "MIME-Version: 1.0", "X-Priority: 3", "Content-Type: text/html; charset=UTF-8"));
+ $mail = new PHPMailer\PHPMailer\PHPMailer();
+ $mail->IsSMTP(); // enable SMTP
+ $mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
+ $mail->SMTPAuth = true; // authentication enabled
+ $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
+ $mail->Host = "www.projectsonline.com.br";
+ $mail->Port = 465; // or 587
+ $mail->IsHTML(true); 
+ $mail->Username = "origem@dominio.com.br"; // email of server
+ $mail->Password = "insira a senha aqui"; // password of server
+ $mail->SetFrom("origem@dominio.com.br"); // email of server
+ $mail->Subject = $assunto; 
+ $mail->Body = $corpo;
+ $mail->AddAddress($para);
 
-//Verifica se os campos estão preenchidos para enviar então o email
-if (!empty($nome) && !empty($email) &&  !empty($telefone) && !empty($mensagem)) {
-    mail($para, $assunto, $corpo, $email_headers);
-    $msg = "Sua mensagem foi enviada com sucesso.";
-    echo "<script>alert('$msg');window.location.assign('./home-page.html');</script>";
-} else {
-    $msg = "Erro ao enviar a mensagem.";
-    echo "<script>alert('$msg');window.location.assign('./contatos-page.html');</script>";
-}
-?>
+    if(!$mail->Send()) {
+       echo "Mailer Error: " . $mail->ErrorInfo;
+    } else {
+       echo "Mensagem enviada com sucesso";
+    }
